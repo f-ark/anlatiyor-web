@@ -33,12 +33,20 @@
     .wrap {
       max-width: 720px;
       margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     .brand {
       font-weight: 700;
       font-size: 1.2rem;
       color: var(--accent);
       text-decoration: none;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: 16px;
     }
     main {
       max-width: 720px;
@@ -95,6 +103,10 @@
   <header>
     <div class="wrap">
       <a class="brand" href="./">Anlatıyor</a>
+      <nav>
+        <a href="./gizlilik.html">Gizlilik Politikası</a>
+        <a href="./sartlar.html">Kullanım Şartları</a>
+      </nav>
     </div>
   </header>
 
@@ -166,7 +178,11 @@
 
   <footer>
     <div class="wrap">
-      Anlatıyor — Ebeveynler için günlük konuşma ve anlatma ev çalışması rehberi · © 2026 FArk Studio
+      <span>© 2026 FArk Studio · <a href="mailto:ferdiarikan@gmail.com">ferdiarikan@gmail.com</a></span>
+      <div>
+        <a href="./gizlilik.html">Gizlilik Politikası</a>
+        <a href="./sartlar.html">Kullanım Şartları</a>
+      </div>
     </div>
   </footer>
 </body>
